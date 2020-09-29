@@ -22,9 +22,15 @@ def run():
         like = input("Which of these food do you like most? (lasagna/pizza) ")
         
         if like == "lasagna":
-            pass
-        else:
-            pass
+            print("All right, like Garfield!")
+            gar = input("Do you like garfield? yes / no ")
+            if gar == "yes":
+
+        elif like == "pizza":
+            pineapple = input("Would you prefer your pizza with or without pizza? ")
+            
+            if pineapple == "with":
+                print("How dare you! but it's okay, I forgive you ")
 
     else:
         print("Sorry you are too young to play")
