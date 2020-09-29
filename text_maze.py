@@ -6,7 +6,15 @@ def run():
         print(f"Okay {name}, you are old enough to play, lets continue")
         place = input("Which place do you like? (woods/beach)")
         
-        if
+        if place == "woods":
+            print("""I really like this place 
+                     Now, solve this problem 1 + 1""")
+            answer = input("What is your answer? ")
+
+            if answer == 2:
+                print("Wrong, you lose")
+            elif answer == "triangle":
+                print("Excelent, you solved the riddle")
 
     elif age == 25:
         print("You are an special player, so let's start an special game")
