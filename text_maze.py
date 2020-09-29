@@ -2,7 +2,7 @@ def run():
     name = input("What is your name? ")
     age = int(input("what is your age? "))
 
-    if age >= 18:
+    if age >= 18 and age != 25:
         print(f"Okay {name}, you are old enough to play, lets continue")
         place = input("Which place do you like? (woods/beach) ")
         
