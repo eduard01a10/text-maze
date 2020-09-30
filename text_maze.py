@@ -17,20 +17,43 @@ def run():
             else:
                 print("You lose")
 
+## This is the "footer"
     elif age == 25:
         print("You are an special player, so let's start an special game")
         like = input("Which of these food do you like most? (lasagna/pizza) ")
         
         if like == "lasagna":
-            print("All right, like Garfield!")
+            print("All right, just like Garfield!")
             gar = input("Do you like garfield? yes / no ")
+            
             if gar == "yes":
+                print("I like it too but sorry this is not the right way. You lose")
+            
+            else:
+                print("Sorry, but this is not the right way, you lose")
 
         elif like == "pizza":
             pineapple = input("Would you prefer your pizza with or without pizza? ")
             
             if pineapple == "with":
                 print("How dare you! but it's okay, I forgive you ")
+            
+            elif pineapple == "without":
+                print("Okay, that's good")
+                music = input("What kind of music do you like rock or pop? ")
+
+                if music == "rock":
+                    print("Yay! you win!")
+                    print("This is your reward https://imgur.com/gallery/Q2gpFhT")
+                
+                else:
+                    print("Sorry, you lose")
+
+            else:
+                print("Wrong answer, you lose")
+
+        else:
+            print("You lose")
 
     else:
         print("Sorry you are too young to play")
