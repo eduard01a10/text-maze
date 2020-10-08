@@ -1,3 +1,19 @@
+def chance():
+    chances = 4
+
+    while chances >= 0:
+        answer = input("What is your answer? ")
+
+        if answer == "2":
+            print(f"Wrong answer, you have {chances} chances left")
+        elif answer == "triangle":
+            print("You win!")
+            break
+        else:
+            print(f"Wrong answer, you have {chances} chances left")
+        
+        chances -= 1
+
 def run():
     name = input("What is your name? ")
     age = int(input("what is your age? "))
@@ -9,17 +25,9 @@ def run():
         
         if place == "woods":
             print("I really like this place. Now, solve this problem 1 + 1")
-            answer = int(input("What is your answer? "))
-            chances = 5
-
-            while answer >= 0:
-                print("Wrong, you lose. Try harder")
-                answer += 1
-
-            if answer == "triangle":
-                print("Excelent, you solved the riddle")
-            else:
-                print("You lose")
+            print("You just have 5 chances")
+            
+            chance()
 
     elif age == 25:
         print("You are an special player, so let's start an special game")
