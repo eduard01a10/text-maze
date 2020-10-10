@@ -50,7 +50,7 @@ def run():
 
                 
 
-## This is the "footer"
+## This is the "footer" where a special stage is loaded for people of 25 years old
     elif age == 25:
         print("You are an special player, so let's start an special game")
         like = input("Which of these food do you like most? (lasagna/pizza) ")
