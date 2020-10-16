@@ -46,7 +46,18 @@ def run():
                 chance()
 
             elif choice >= 5 and choice <= 10:
-                pass 
+                vinci = ["Da vinci", "davinci", "Da Vinci", "da vinci"]
+                answer = input ("Ok, now you have to answer who painted the mona lisa? ")
+                if answer in vinci:
+                    print("That's right! You have learned a lot and now, you have to do one more task")
+                    space = input("Do you think that the moonlanding was true or false? ")
+                    if space == "true":
+                        print("You are a truly scientist and you need to win, so, here is your reward: https://imgur.com/gallery/dBUZ3Ig")
+                    else:
+                        print("Wrong asnwer, you lose")
+                else:
+                    print("Wrong, start the program again")
+                 
 
                 
 
